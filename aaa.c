@@ -1,12 +1,18 @@
 #include <stdio.h>
+#include <string.h>
+
 int main()
 {
-    int a, b, c, d;
-    int x;
-    scanf("%d %d %d %d", &a, &c, &b, &d);
-    x = ((b*60)+d) - ((a*60)+c);
-    if(x<=0)
-        x += 24*60;
-    printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", x/60, x%60);
-    return 0;
+    char str1[100], str2[100];
+
+    printf("Enter first string: ");
+    gets(str1);
+
+    char* p=str1;
+        int len= strlen(str1);
+    for(int i=len-1; i>=0;--i)
+    {
+        
+        printf("%c",p[i]+32);
+    }
 }

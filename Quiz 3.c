@@ -6,11 +6,11 @@ int main()
     scanf("%d",&a);
     if (a%4==0 && a%5==0)
     {
-        printf("%d is divisable by 4 and 5\n");
+        printf("%d is divisable by 4 and 5\n",a);
     }
     else
     {
-        printf("%d is not divisable by 4 and 5");
+        printf("%d is not divisable by 4 and 5",a);
     }
 
 }
